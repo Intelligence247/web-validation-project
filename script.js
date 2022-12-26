@@ -84,7 +84,7 @@ button.addEventListener('click', () => {
 
     // Bio Starts here
     bioErr.innerHTML = ''
-    if (bio.value.match(/^[a-zA-Z *]|[-_]{8,50}$/) && !bio.value.match(/[0-9]/)) {
+    if (bio.value.match(/^[a-zA-Z-_ *]{8,50}$/) && !bio.value.match(/[0-9]/)) {
         bio.style.outline = '2px solid #21bf73'
         bio.style.border = 'none'
     } else {
