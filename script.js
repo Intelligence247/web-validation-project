@@ -48,7 +48,7 @@ button.addEventListener('click', () => {
 
     // email starts here
     emailErr.innerHTML = ''
-    if (email.value.match(/[A-Za-z0-9]+@[a-zA-Z]+.com/)) {
+    if (email.value.match(/[A-Za-z0-9]+@[a-zA-Z]+[.]+com/)) {
         email.style.outline = '2px solid #21bf73'
         email.style.border = 'none'
     } else {
@@ -84,7 +84,7 @@ button.addEventListener('click', () => {
 
     // Bio Starts here
     bioErr.innerHTML = ''
-    if (bio.value.match(/^[a-z *]{8,50}$/) && !bio.value.match(/[0-9]/)) {
+    if (bio.value.match(/^[a-zA-Z *]|[-_]{8,50}$/) && !bio.value.match(/[0-9]/)) {
         bio.style.outline = '2px solid #21bf73'
         bio.style.border = 'none'
     } else {
@@ -99,5 +99,5 @@ button.addEventListener('click', () => {
         button.style.backgroundColor = '#333'
     }
 })
-
+console.log('mmkawodqwe asdaedq qewsd edfw wsdewe wedf eds ASDES'.length)
 // To Negate using regex You just have to add (.*) after writing those things you wanted to see in ur validation any other one that is not written will not be allowed when (.*) is added.
