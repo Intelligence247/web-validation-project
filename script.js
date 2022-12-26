@@ -37,7 +37,7 @@ button.addEventListener('click', () => {
 
     // Lastname starts here
     lastnameErr.innerHTML = ''
-    if (lastname.value.match(/[A-Za-z.*$]{3,16}/) && !lastname.value.match(/[0-9]/)) {
+    if (lastname.value.match(/^[A-Za-z.*$]{3,16}$/) && !lastname.value.match(/[0-9]/)) {
         lastname.style.outline = '2px solid #21bf73'
         lastname.style.border = 'none'
     } else {
