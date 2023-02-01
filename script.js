@@ -1,4 +1,4 @@
-let errMessages = {
+const errMessages = {
     firstname: 'First name must be alphanumeric and contain 3 - 16 characters',
     lastname: 'Last name must be alphanumeric and contain 3 - 16 characters',
     email: 'Email must be a valid address, e.g exmaple@example.com',
@@ -48,7 +48,7 @@ button.addEventListener('click', () => {
 
     // email starts here
     emailErr.innerHTML = ''
-    if (email.value.match(/[A-Za-z0-9]+@[a-zA-Z]+[.]+com/)) {
+    if (email.value.match(/[A-Za-z0-9]+@[a-zA-Z]+[.]+[a-zA-Z]/)) {
         email.style.outline = '2px solid #21bf73'
         email.style.border = 'none'
     } else {
